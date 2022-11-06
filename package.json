@@ -4,7 +4,10 @@
   "description": "A simple mern app to learn docker",
   "main": "null",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install:frontend": "cd frontend && npm install",
+    "install:backend": "cd backend && npm install",
+    "postinstall": "npm-run-all install:*"
   },
   "repository": {
     "type": "git",
