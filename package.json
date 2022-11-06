@@ -1,0 +1,26 @@
+{
+  "name": "learn-docker",
+  "version": "1.0.0",
+  "description": "A simple mern app to learn docker",
+  "main": "null",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lnkarma/learn-docker.git"
+  },
+  "keywords": [
+    "docker",
+    "mern",
+    "react",
+    "node",
+    "postgres"
+  ],
+  "author": "Lokenath Karmakar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lnkarma/learn-docker/issues"
+  },
+  "homepage": "https://github.com/lnkarma/learn-docker#readme"
+}
