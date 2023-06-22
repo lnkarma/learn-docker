@@ -9,6 +9,10 @@ services:
       - ./backend:/app
     depends_on:
       - db
+      - redis
+    environment:
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
 
   frontend:
     build: ./frontend
@@ -35,6 +39,15 @@ services:
     restart: always
     ports:
       - 8080:8080
+
+  redis:
+    image: redis:alpine
+    container_name: redis
+    restart: unless-stopped
+    ports:
+      - 6379:6379
+    expose:
+      - 6379
 
 volumes:
   pgdata:
